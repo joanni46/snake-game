@@ -1,0 +1,17 @@
+apply plugin: "java"
+apply plugin: "application"
+
+repositories{
+	mavenCentral()
+}
+
+mainClassName = "ru.betry.App"
+
+dependencies{
+	// https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+	testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.10.2'
+	implementation group: 'org.lwjgl', name: 'lwjgl', version: '3.3.3'
+	implementation group: 'org.openjfx', name: 'javafx-graphics', version: '23-ea+3'
+
+}
+
